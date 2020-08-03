@@ -24,6 +24,22 @@ chsh -s /usr/bin/fish
 chsh -s /usr/local/bin/fish (if the previous one does not find fish)
 ```
 
+### Config fish background
+```bash
+fish_config
+might need to install -> sudo apt install python3-distutils -y 
+```
+
+### Install fish theme
+Download oh-my-fish
+```bash
+curl -L https://get.oh-my.fish | fish
+```
+
+Install oh-my-fish themes
+```bash
+omf install clearance
+```
 
 ## Docker
 Install docker from <https://docs.docker.com/engine/install/ubuntu/>
