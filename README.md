@@ -1,3 +1,53 @@
+# Install software
+## Git
+```bash
+sudo apt install git
+```
+
+### Setup ssh keys
+```bash
+ssh-keygen -t rsa -C "jvsegarra@gmail.com"
+```
+
+## Fish shell
+Follow instructions in <https://github.com/fish-shell/fish-shell>
+
+```bash
+sudo apt-add-repository ppa:fish-shell/release-3
+sudo apt-get update
+sudo apt-get install fish
+```
+
+### Make fish the default shell
+```bash
+chsh -s /usr/bin/fish
+chsh -s /usr/local/bin/fish (if the previous one does not find fish)
+```
+
+
+## Docker
+Install docker from <https://docs.docker.com/engine/install/ubuntu/>
+
+### Install docker-compose
+```bash
+sudo apt install docker-compose
+```
+
+## Java / JDK
+
+
+## Intellij / Pycharm
+Install from software center or <https://snapcraft.io/store>
+
+## Postman
+```bash
+sudo snap install postman
+```
+
+## Querypie
+Download and install from <https://www.querypie.com/>
+
+
 # Settings
 ## Bash
 
