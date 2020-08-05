@@ -50,7 +50,51 @@ sudo apt install docker-compose
 ```
 
 ## Java / JDK
+Install JRE
+```bash
+sudo apt install default-jre
+java -version
+```
 
+Install JDK
+```bash
+sudo apt install default-jdk
+javac -version
+```
+
+Determine where Java is installed
+```bash
+sudo update-alternatives --config java
+```
+
+### For bash shell
+Copy the path from your preferred installation and add the following line at the end of /etc/environment, making sure to replace the highlighted path with your own copied path, but do not include the /bin portion of the path:
+```bash
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" (without /bin/java)
+```
+
+Now reload this file to apply the changes to your current session:
+```bash
+source /etc/environment
+echo $JAVA_HOME
+```
+
+### For fish shell
+Edit fish config
+```bash
+vim ~/.config/fish/fish.config
+```
+
+And add the following line with the path to the current Java installation, without the /bin portion of the path:
+```bash
+set -x JAVA_HOME "/usr/lib/jvm/java-11-openjdk-amd64"
+```
+
+Now reload this file to apply the changes to your current session:
+```bash
+source ~/.config/fish/fish.config
+echo $JAVA_HOME
+```
 
 ## Intellij / Pycharm
 Install from software center or <https://snapcraft.io/store>
