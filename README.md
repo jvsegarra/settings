@@ -42,7 +42,15 @@ omf install clearance
 ```
 
 ## Docker
+### Install and setup
 Install docker from <https://docs.docker.com/engine/install/ubuntu/>
+
+Add user to docker group:
+```bash
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+```
+Then log out and log back in
 
 ### Install docker-compose
 ```bash
@@ -107,6 +115,27 @@ sudo snap install postman
 ## Querypie
 Download and install from <https://www.querypie.com/>
 
+
+## Slack
+```bash
+sudo snap install slack --classic
+```
+### Slack channels
+kotlinlang, BcnEng, pyBCN
+
+## Hyper
+### Download .deb
+Download .deb from <https://hyper.is/> and install it
+
+### Setup
+Open Preferences and edit the next keys in .hyper.js:
+```javascript
+cursorColor: '#FDFA7C'
+```
+Install hyper-material-theme theme. Run this command in Hyper:
+```bash
+hyper i hyper-material-theme
+```
 
 # Settings
 ## Bash
