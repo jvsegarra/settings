@@ -41,6 +41,9 @@ Install oh-my-fish themes
 omf install clearance
 ```
 
+## Bash shell
+Follow instructions in <https://github.com/ohmybash/oh-my-bash>
+
 ## Docker
 ### Install and setup
 Install docker from <https://docs.docker.com/engine/install/ubuntu/>
@@ -115,7 +118,6 @@ sudo snap install postman
 ## Querypie
 Download and install from <https://www.querypie.com/>
 
-
 ## Slack
 ```bash
 sudo snap install slack --classic
@@ -135,6 +137,11 @@ cursorColor: '#FDFA7C'
 Install hyper-material-theme theme. Run this command in Hyper:
 ```bash
 hyper i hyper-material-theme
+```
+
+## Flameshot
+```bash
+sudo apt install flameshot
 ```
 
 # Settings
