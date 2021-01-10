@@ -44,6 +44,20 @@ omf install clearance
 ## Bash shell
 Follow instructions in <https://github.com/ohmybash/oh-my-bash>
 
+### Bash-it
+Follow instructions in <https://github.com/Bash-it/bash-it>
+
+```bash
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh
+```
+### Switch themes in Bash-it
+go to ```~/.bashrc``` and change line export ```BASH_IT_THEME='<theme>'``` (eg. ```BASH_IT_THEME='sexy'```)
+
+(careful, theme names go in lowercase)
+
+then ```source ~/.bashrc```
+
 ## Docker
 ### Install and setup
 Install docker from <https://docs.docker.com/engine/install/ubuntu/>
