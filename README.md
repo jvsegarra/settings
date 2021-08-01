@@ -58,6 +58,9 @@ go to ```~/.bashrc``` and change line export ```BASH_IT_THEME='<theme>'``` (eg. 
 
 then ```source ~/.bashrc```
 
+## Bash utilities
+<https://dev.to/heraldofsolace/replace-your-existing-unix-utilities-with-these-modern-alternatives-2bfo>
+
 ## Docker
 ### Install and setup
 Install docker from <https://docs.docker.com/engine/install/ubuntu/>
