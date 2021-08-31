@@ -124,6 +124,23 @@ source ~/.config/fish/fish.config
 echo $JAVA_HOME
 ```
 
+### Node / Typescript
+```bash
+sudo snap install node --classic
+
+# Typescript compiler
+sudo npm install -g typescript
+```
+
+### Python
+```bash
+sudo snap install python<version>
+
+# Setup default version with alias
+alias python='/usr/bin/python3.9'
+```
+https://linuxconfig.org/how-to-change-from-default-to-alternative-python-version-on-debian-linux
+
 ## Flathub.org
 Install:
 - Intellij / Pycharm
