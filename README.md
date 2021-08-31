@@ -124,23 +124,17 @@ source ~/.config/fish/fish.config
 echo $JAVA_HOME
 ```
 
-## Intellij / Pycharm
-Install from software center or <https://snapcraft.io/store>
+## Flathub.org
+Install:
+- Intellij / Pycharm
+- Postman
+- Slack
+- Telegram
+- Todoist
+- ...
 
-## Postman
-```bash
-sudo snap install postman
-```
-
-## Querypie
-Download and install from <https://www.querypie.com/>
-
-## Slack
-```bash
-sudo snap install slack --classic
-```
 ### Slack channels
-kotlinlang, BcnEng, pyBCN
+kotlinlang, BcnEng, pyBCN, typescript
 
 ## Hyper
 ### Download .deb
@@ -154,11 +148,6 @@ cursorColor: '#FDFA7C'
 Install hyper-material-theme theme. Run this command in Hyper:
 ```bash
 hyper i hyper-material-theme
-```
-
-## Flameshot
-```bash
-sudo apt install flameshot
 ```
 
 # Settings
