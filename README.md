@@ -63,21 +63,19 @@ then ```source ~/.bashrc```
 
 ## Docker
 ### Install and setup
-Install docker from <https://docs.docker.com/engine/install/ubuntu/>
+Install docker from <https://snapcraft.io/docker>
 
 Add user to docker group:
 ```bash
-sudo groupadd docker
-sudo usermod -aG docker ${USER}
-```
-Then log out and log back in
-
-### Install docker-compose
-```bash
-sudo apt install docker-compose
+sudo addgroup --system docker
+sudo adduser $USER docker
+newgrp docker
+sudo snap disable docker
+sudo snap enable docker
 ```
 
-## Java / JDK
+## Languages
+### Java / JDK
 Install JRE
 ```bash
 sudo apt install default-jre
@@ -95,7 +93,7 @@ Determine where Java is installed
 sudo update-alternatives --config java
 ```
 
-### For bash shell
+#### For bash shell
 Copy the path from your preferred installation and add the following line at the end of /etc/environment, making sure to replace the highlighted path with your own copied path, but do not include the /bin portion of the path:
 ```bash
 JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64" (without /bin/java)
@@ -107,7 +105,7 @@ source /etc/environment
 echo $JAVA_HOME
 ```
 
-### For fish shell
+#### For fish shell
 Edit fish config
 ```bash
 vim ~/.config/fish/fish.config
