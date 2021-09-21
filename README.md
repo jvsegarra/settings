@@ -155,6 +155,10 @@ kotlinlang, BcnEng, pyBCN, typescript
 ### Download .deb
 Download .deb from <https://hyper.is/> and install it
 
+### Customize
+https://github.com/bnb/awesome-hyper
+https://www.npmjs.com/package/hyper-material-theme
+
 ### Setup
 Open Preferences and edit the next keys in .hyper.js:
 ```javascript
