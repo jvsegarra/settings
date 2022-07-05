@@ -151,6 +151,43 @@ Install:
 ### Slack channels
 kotlinlang, BcnEng, pyBCN, typescript
 
+## Kitty terminal
+### Setup theme
+Instructions on https://github.com/dexpota/kitty-themes
+
+1. clone the entire kitty-themes repository:
+```bash
+git clone --depth 1 https://github.com/dexpota/kitty-themes.git ~/.config/kitty/kitty-themes
+```
+
+2. Choose a theme and create a symlink (Apprentice or Blazer are nice):
+```bash
+cd ~/.config/kitty
+ln -s ./kitty-themes/themes/Apprentice.conf ~/.config/kitty/theme.conf
+```
+
+3. Add this line to your kitty.conf configuration file:
+```bash
+include ./theme.conf
+```
+
+### Change icon
+1. Download icon https://github.com/DinkDonk/kitty-icon/blob/main/kitty-dark.svg
+2. Locate application launcher or application desktop file. Probably in `/usr/share/applications/kitty.desktop`
+3. In **Icon** entry, specify the path of the downloaded icon
+```
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=kitty
+GenericName=Terminal emulator
+Comment=A fast, feature full, GPU based terminal emulator
+TryExec=kitty
+Exec=kitty
+Icon=/home/jv/icons/kitty-dark.svg
+Categories=System;TerminalEmulator;
+```
+
 ## Hyper
 ### Download .deb
 Download .deb from <https://hyper.is/> and install it
